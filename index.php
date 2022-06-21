@@ -1,5 +1,5 @@
 <?php $text = 'scemo chi legge';?>
-<?php $censured = $_GET['scemo'];?>
+<?php $_GET['censured'];?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +14,8 @@
 <h1> <?= $text;?> </h1>
 <h3> len: <?= strlen($text);?> </h3>
 
-<h1> <?= str_replace($censured,'***',$text);?> </h1>
-<h3> len: <?= strlen(str_replace($censured,'***',$text));?> </h3>
+<h1> <?= str_replace('scemo','***',$text);?> </h1>
+<h3> len: <?= strlen(str_replace('scemo','***',$text));?> </h3>
 
 </body>
 </html>
